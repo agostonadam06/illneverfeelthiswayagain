@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/Hourglass icon.png">
     <title>I'll Never Feel This Way Again</title>
 </head>
 <body>
@@ -12,40 +13,52 @@
         <img src="./SHARING COPY/I'll Never Feel This Way Again - Borító.jpg" alt="Cover" id="cover">
     </div>
     <div class="content">
-        <ul>
-            <h1 id="toc">Tartalomjegyzék</h1>
-            <li>
-                <h2><a href="./poh.html">Poetry of Hourglass</a></h2>
-                <ul>
-                    <li>3 (+1 WIP) magyar ballada</li>
-                    <li>22+1 angol vers</li>
-                </ul>
-            </li>
-            <li>
-                <h2>Halovány egy emlék, akárcsak egy álom...</h2>
-                <ul>
-                    <li>Ne vonyíts!</li>
-                    <li>Mindörökké</li>
-                    <li>Elfeledett tenger</li>
-                    <li>Csalókás e legény...</li>
-                </ul>
-            </li>
-            <li>
-                <h2>Clair-Obscur</h2>
-                <ul>
-                    <li>Clair</li>
-                    <li>Obscur</li>
-                </ul>
-            </li>
-            <li>
-                <h2>Beginnings (2024)</h2>
-                <ul>
-                    <li>Nem felejthetem</li>
-                    <li>Two Worlds</li>
-                </ul>
-            </li>
-            <li><h2><i>UNFINISHED & UNCLASSIFED</i></h2></li>
-        </ul>
+        <h1 id="toc">Tartalomjegyzék</h1>
+        <h2><a href="./poh.html">Poetry of Hourglass</a></h2>
+        <p>3 (+1 WIP) magyar ballada</p>
+        <p>22+1 angol vers</p>
+
+        <h2 class="text-button"
+            data-pdf="SHARING COPY/Halovány egy emlék, akárcsak egy álom/Halovány egy emlék, akárcsak egy álom.pdf"
+            data-title="Halovány egy emlék, akárcsak egy álom...">
+            Halovány egy emlék, akárcsak egy álom...
+        </h2>
+        <p>Ne vonyíts!</p>
+        <p>Mindörökké</p>
+        <p>Elfeledett tenger</p>
+        <p>Csalókás e legény...</p>
+
+        <h2><a href="">Clair-Obscur</a></h2>
+        <p>Clair</p>
+        <p>Obscur</p>
+
+        <h2><a href="">Beginnings (2024)</a></h2>
+        <p>Nem felejthetem</p>
+        <p>Two Worlds</p>
+
+        <h2><a href=""><i>UNFINISHED & UNCLASSIFED</i></a></h2>
+    </div>
+    
+    <div class="overlay" id="overlay">
+        <div class="overlay-header">
+            <a class="overlay-btn" id="saveBtn" download title="Save">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="7 10 12 15 17 10"/>
+                <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            </a>
+            <button class="overlay-btn" id="closeBtn" title="Exit">&times;</button>
+        </div>
+        <div class="overlay-content">
+            <img id="overlayImage" src="" alt="Full Image">
+            <iframe id="overlayPDF" src="" title="PDF Viewer"></iframe>
+
+            <div class="overlay-nav">
+                <button id="prevBtn" class="nav-btn">&#171; Previous</button>
+                <button id="nextBtn" class="nav-btn">Next &#187;</button>
+            </div>
+        </div>        
     </div>
     <script src="index.js"></script>
 </body>
